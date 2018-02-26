@@ -1,0 +1,3 @@
+26 Feb 2018
+Transformations:
+  -Dilations (x,y,z) -> (ax, ay, az)
