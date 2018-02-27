@@ -29,3 +29,6 @@ Transformations:
     T * E0 = E1
     R * E1 = E2
     S * E2 = E3
+
+    ∴E3 = (S * R * T) * E0
+        !The final transform matrix is REVERSED from original order of transformations!
