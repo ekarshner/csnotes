@@ -1,3 +1,31 @@
-26 Feb 2018
+26-27 Feb 2018
 Transformations:
-  -Dilations (x,y,z) -> (ax, ay, az)
+  -Dilations (x,y,z) -> (ax, by, cz)
+    >take the identity matrix, diagonal is a, b, c, 1 for dilation factors
+    >dilations may translate your shape; you must translate it back to orig. position
+  -Rotations (x,y) Rϑ -> (xcosϑ - ysinϑ , xcosϑ + xsinϑ  )
+    >polar coordinates(ϕ is angle b/w origin-P1 and base axis)
+      x = rcosϕ       x1 = rcos(ϑ + ϕ)                    y1 = rsin(ϕ + ϑ)
+      y = rsinϕ            rcosϕcosϑ - rsinϕsinϑ               rsinϕcosϑ - rcosϕsinϑ
+                      x  = xcosϑ - ysinϑ                  y  = ycosϑ + xsinϑ
+
+    Rotation by ϑ around z-axis [R(ϑ,z)]:
+      [cosϑ -sinϑ 0 0][x]   [xcosϑ - ysinϑ]
+      [sinϑ cosϑ  0 0][y] = [ycosϑ + xsinϑ]
+      [0    0     1 0][z]   [z]
+      [0    0     0 1][1]   [1]
+
+    Rotation by ϑ around x-axis [R(ϑ,x)]:
+      y1 = ycosϑ - zsinϑ
+      z1 = zcosϑ + ysinϑ
+
+    Rotation by ϑ around y-axis [R(ϑ,x)]:
+      x1 = xcosϑ + zsinϑ
+      z1 = zcosϑ - xsinϑ
+
+  -Combing Transformations
+    E: edge mtx           R: rotation mtx
+    T: translation mtx    S: scale mtx
+    T * E0 = E1
+    R * E1 = E2
+    S * E2 = E3
