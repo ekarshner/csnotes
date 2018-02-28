@@ -3,6 +3,7 @@ Transformations:
   -Dilations (x,y,z) -> (ax, by, cz)
     >take the identity matrix, diagonal is a, b, c, 1 for dilation factors
     >dilations may translate your shape; you must translate it back to orig. position
+    
   -Rotations (x,y) Rϑ -> (xcosϑ - ysinϑ , xcosϑ + xsinϑ  )
     >polar coordinates(ϕ is angle b/w origin-P1 and base axis)
       x = rcosϕ       x1 = rcos(ϑ + ϕ)                    y1 = rsin(ϕ + ϑ)
