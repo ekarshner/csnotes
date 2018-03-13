@@ -1,3 +1,15 @@
+13 Mar 2018
+3D Shapes:
+  -Box:
+    Defining points: vertices
+    Given:
+      height (y), width(x), depth(z), P0 (top-left-front corner)
+  -Sphere:
+    Defining points: points on the surface
+    Given:
+      Center, radius
+    Generate points by ROTATING the circle either around x or y
+
 5 Mar 2018
 Parametric Equations:
   -Define curves as systems of equation with a single independent variable (t)
