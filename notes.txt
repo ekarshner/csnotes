@@ -1,4 +1,4 @@
-13 Mar 2018
+13,14 Mar 2018
 3D Shapes:
   -Box:
     Defining points: vertices
@@ -9,6 +9,27 @@
     Given:
       Center, radius
     Generate points by ROTATING the circle either around x or y
+    ϕ = angle of circle rotation (0 -> 2π)
+    ϑ = angle of circle construction (0 -> π)
+    Sphere (rotate around x)
+      x = rcosϑ + cx
+      y = rsinϑcosϕ + cy
+      z = rsinϑsinϕ + cz
+
+    For semicircle:
+      for ϑ: 0 -> 2π
+        for ϕ: 0 -> π
+          x = rcosϑ - cx
+          y = rsinϑcosϕ + cy
+          z = rsinϑsinϕ + cz
+  -Torus:
+    Defining points: surface points
+    Given:
+      (Cx, Cy, Cz), larger radius, smaller radius
+    To generate points translate along a circle and rotate it
+    If we move along x, rotate about y
+    If we move along y, rotate about x
+
 
 5 Mar 2018
 Parametric Equations:
