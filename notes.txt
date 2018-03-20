@@ -1,3 +1,20 @@
+20 Mar 2018
+Vector Math review:
+  (x,y,z) vs <x,y,z>
+  -Magnitude
+    ||A|| = √(Ax² + Ay² + Az²)
+    *A normalized vector is the unit vector constructed from a different vector
+    Â = 1 / ||A|| * <Ax, Ay, Az>
+
+  -Dot Product:
+    A * B  = ||A|| ||B|| cosϑ = AxBx + AyBy + AzBz
+
+  -Cross product:
+    Orthogonal to both vectors
+    Magnitude = area of the parallelogram made by A and B
+    A x B = ||A|| ||B|| sinϑ N [Unit vector]
+
+
 13,14 Mar 2018
 3D Shapes:
   -Box:
