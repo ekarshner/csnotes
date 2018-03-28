@@ -12,7 +12,18 @@ Vector Math review:
   -Cross product:
     Orthogonal to both vectors
     Magnitude = area of the parallelogram made by A and B
-    A x B = ||A|| ||B|| sinϑ N [Unit vector]
+    A x B = ||A|| ||B|| sinϑ N [Unit vector] = <AyBz - AzBy, AzBx - AxBz, AxBy - AyBx>
+
+  -Finding a vector between two points:
+    PQ = <Q-P>
+    QP = <P-Q>
+
+  -Wireframe mesh: Shape definition is created by connecting edges between points on the surface
+
+  -Polygon mesh: Shape definition is created by connecting points on the surface to create polygons (triangles, quadrilaterals)
+
+  Edge matrix -> polygon matrix
+    -Just group each point in the edge matrix into clumps of 3
 
 
 13,14 Mar 2018
