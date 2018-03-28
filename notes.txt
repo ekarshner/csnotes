@@ -1,3 +1,20 @@
+28 Mar 2018
+Backface Culling
+  -Only draw the forward facing surfaces
+  -vector N: surface normal; perpendicular to polygon
+  -vector V: view vector; vector from surface to eye/camera
+
+  1. Calculate N
+    Normal Vector = A x B
+    A = <P1 - P0>
+    B = <P2 - P0>
+  2. Find ϑ [angle between N and V]
+    N * V = ||N|| ||V|| cosϑ
+    V = <0,0,1>
+    N = <x,y,z>
+    N * V = z
+  3. If -90 < ϑ < 90, draw polygon
+
 20 Mar 2018
 Vector Math review:
   (x,y,z) vs <x,y,z>
