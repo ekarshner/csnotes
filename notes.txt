@@ -1,3 +1,12 @@
+11 Apr 2018
+Relative Coordinate System
+  -In a RCS we can apply transformations to individual or groups of shapes
+  -Transformations will be applied to the 'world' or current coordinate system
+  Drawing in a RCS
+    1. Generate the polygons/edges
+    2. Apply the current coordinate system to those points
+    3. Draw the polygons/edges
+
 28 Mar 2018
 Backface Culling
   -Only draw the forward facing surfaces
