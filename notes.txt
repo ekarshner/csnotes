@@ -1,3 +1,11 @@
+12 Apr 2018
+Coordinate System Stack
+  -We will maintain a stack of coordinate systems
+  -The top will be the current coordinate system
+  -The bottom will always be the identity matrix
+  -Transformations will be applied to the top
+  -Push will put a COPY of the top on the top (WARNING: python list variables by default are refs, make a true copy)
+
 11 Apr 2018
 Relative Coordinate System
   -In a RCS we can apply transformations to individual or groups of shapes
@@ -6,6 +14,7 @@ Relative Coordinate System
     1. Generate the polygons/edges
     2. Apply the current coordinate system to those points
     3. Draw the polygons/edges
+
 
 28 Mar 2018
 Backface Culling
