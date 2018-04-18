@@ -1,3 +1,22 @@
+18 Apr 2018
+Scanline Filling/Conversion
+  -Draw horizontal lines to fill triangles
+  -Have bottom, top, middle points
+    ybottom, ymiddle, ytop
+    xbottom, xmiddle, xtop
+
+  Y: ybottom -> ytop; y+=1
+  X:
+    x+=Δ0
+      Δ0 = (xtop - xbottom) / (ytop - ybottom)
+  X1: on the line bottom,middle until y = ymiddle, then on the line middle,top
+    x+=Δ1
+      Δ1 = (xmiddle - xbottom) / (ymiddle - ybottom)
+      OR
+      Δ1 = (xtop - xmiddle) / (ytop - ymiddle)
+      ***MAKE SURE THAT YOU'RE NOT DIVIDING BY ZERO -- if either (ymiddle-ybottom) or (ytop - ymiddle) == 0, then don't run your code
+
+
 12 Apr 2018
 Coordinate System Stack
   -We will maintain a stack of coordinate systems
