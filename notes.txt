@@ -1,3 +1,14 @@
+19 Apr 2018
+Z-Buffer
+  -Z-buffer is a 2D array of floating point values that directly corresponds to the screen
+  -Before modifying the screen, we will check the z-buffer
+  -Z values should be initialized to be the lowest possible value
+
+  Things to change:
+    Plot must check/modify the z-buffer
+    Drawline must calculate z values
+    scanline convert must calculate z values
+
 18 Apr 2018
 Scanline Filling/Conversion
   -Draw horizontal lines to fill triangles
