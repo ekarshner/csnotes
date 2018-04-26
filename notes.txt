@@ -1,3 +1,28 @@
+26 Apr 2018
+Lighting
+  -Realistic lighting models find color based on:
+    -Color, intensity, and location of light (sources)
+    -Reflective properties of objects
+
+  Two kinds of light in our images:
+    -Ambient light
+      'background light' - no defined source, comes from everywhere evenly
+    -Point light sources
+      Come from a distinct origin
+      Represented by color and location
+
+  Phong Reflection Model
+    -Models realistic reflections by breaking reflection into 3 parts:
+      Ambient, diffuse, specular
+        I = Ambient + diffuse + specular [diffuse and specular represent point light]
+        Ambient:
+          -A: Ambient light value (0-255)
+          -Ka: Constant of ambient reflection (0-1)
+          Ambient = AKa
+        Diffuse:
+          -Reflection of a point light source
+          -Reflected in all directions evenly (anything that is not shiny does this)
+
 19 Apr 2018
 Z-Buffer
   -Z-buffer is a 2D array of floating point values that directly corresponds to the screen
