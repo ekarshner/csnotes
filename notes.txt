@@ -1,4 +1,4 @@
-26 Apr 2018
+26-27 Apr 2018
 Lighting
   -Realistic lighting models find color based on:
     -Color, intensity, and location of light (sources)
@@ -14,7 +14,7 @@ Lighting
   Phong Reflection Model
     -Models realistic reflections by breaking reflection into 3 parts:
       Ambient, diffuse, specular
-        I = Ambient + diffuse + specular [diffuse and specular represent point light]
+        I = Ambient + diffuse + specular [diffuse and specular represent point light] = AKa + PKd(L⋅N)
         Ambient:
           -A: Ambient light value (0-255)
           -Ka: Constant of ambient reflection (0-1)
@@ -22,6 +22,16 @@ Lighting
         Diffuse:
           -Reflection of a point light source
           -Reflected in all directions evenly (anything that is not shiny does this)
+          -P: Color of the point light source
+          -Kd: Constant of diffuse reflection
+          Diffuse reflection can be simulated by cosϑ
+            Cosϑ = L ⋅ N
+            Diffuse = PKd(L⋅N)
+        Specular Reflection:
+          -Reflection of a point light source in a specific direction
+          -Models glossy/shiny surfaces
+          -Ks: Constant of specular reflection
+          -P: Color of point light
 
 19 Apr 2018
 Z-Buffer
