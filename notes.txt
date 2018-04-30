@@ -32,6 +32,10 @@ Lighting
           -Models glossy/shiny surfaces
           -Ks: Constant of specular reflection
           -P: Color of point light
+          cosα = R[reflection vector] ⋅ V[vision vector]
+          cosϑ [angle of reflection] = ||T||
+          R = 2(N⋅L)N - L
+          Specular = PKs[(2(N⋅L)N - L)]^x[simulate narrow reflection]
 
 19 Apr 2018
 Z-Buffer
