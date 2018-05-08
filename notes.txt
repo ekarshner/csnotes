@@ -1,3 +1,15 @@
+8 May 2018
+
+Compiler Parts:
+
+Name              Input                     Output
+Lexer             source code (text)        token list
+
+Lexer
+  -Reads in source code and outputs a token list
+    -tools: C - lex, flex
+            java - javacc
+
 26-27 Apr 2018
 Lighting
   -Realistic lighting models find color based on:
