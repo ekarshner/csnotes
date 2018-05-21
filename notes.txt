@@ -1,14 +1,28 @@
-8 May 2018
+8-10 May 2018
 
 Compiler Parts:
 
-Name              Input                     Output
-Lexer             source code (text)        token list
+Name                Input                     Output
+Lexer               source code (text)        token list
+Parser              token list                parse tree
+Semantic analyzer   parse tree                operation list symbol table
 
 Lexer
   -Reads in source code and outputs a token list
     -tools: C - lex, flex
             java - javacc
+
+Parser
+  -Performs syntax analysis
+  -Checks the token list against the defined structure (grammar) of the language
+  -Generates a syntax tree
+  -tools: C - yacc, bison
+          java - javacc
+
+Semantic analyzer
+  -Evaluates the syntax tree to create a list of operations
+  -Creates a symbol table containing all identifiers and associated information
+  -Type errors are usually caught here
 
 26-27 Apr 2018
 Lighting
