@@ -1,3 +1,13 @@
+21 May 2018
+  1) Setup
+  2) Vary
+  3) Draw
+
+  Structure for storing knob values:
+    Knob
+      M0: {0:0}, {1:.25}, ...
+      R0: ...
+
 8-10 May 2018
 
 Compiler Parts:
