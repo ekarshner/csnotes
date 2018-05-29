@@ -1,3 +1,17 @@
+29 May 2018
+Shading Models:
+  -When/how frequently you calculate color (I)
+  Flat shading:
+    -Calculate I once per polygon
+  Gourand Shading
+    -Calculate I once per vertex
+    -Interpolate I along the scanlines
+  Phong Shading
+    -Calculate I once per pixel
+    -Interpolate the surface normal along the scanlines
+  Calculating Normals for Gourand and Phong
+  -Vertex normals: Combined value of all surface normals for polygons that share the vertex
+
 21 May 2018
   1) Setup
   2) Vary
