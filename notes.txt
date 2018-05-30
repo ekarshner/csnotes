@@ -1,3 +1,8 @@
+30 May 2018
+Vertex Normals:
+  -Combination of the surface normals of all polygons that share a vertex
+    Polygons [V0,V1,V2, v0, V2, V3, etc.] (polygon 0 is first 3, polygon 1 is second 3, etc.)
+
 29 May 2018
 Shading Models:
   -When/how frequently you calculate color (I)
